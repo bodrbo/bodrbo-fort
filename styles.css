@@ -160,10 +160,9 @@ button{color:inherit;cursor:pointer}
 .fort-card span{display:block;margin-bottom:8px;color:#76a8c9;font:700 10px "Manrope",sans-serif}
 .fort-card h3{margin:0;font-family:"Oswald",Impact,sans-serif;font-size:30px;text-transform:uppercase}
 .fort-card p{max-width:550px;margin:7px 0 0;color:#d8e1e7;font-size:11px;line-height:1.5}
-.fort-card--text{grid-column:3;background:var(--orange)}
-.fort-card--text::after{display:none}
-.fort-card--text>div{position:relative;display:flex;height:100%;flex-direction:column;align-items:flex-start;justify-content:flex-end}
-.fort-card--text span{color:#ffdac0}.fort-card--text p{color:#fff}.fort-card--text a{margin-top:20px;color:#fff;font-size:9px;font-weight:800;text-decoration:none;text-transform:uppercase}
+.fort-card--wide{grid-column:2/4}
+.fort-card--wide>img{object-position:center 58%}
+.fort-card--wide a{display:inline-block;margin-top:16px;border-bottom:1px solid rgba(255,255,255,.55);color:#fff;font-size:9px;font-weight:800;line-height:1.8;text-decoration:none;text-transform:uppercase}
 
 .reviews{background:#0a3552;color:#fff}
 .reviews-track{position:relative;min-height:250px}
@@ -234,7 +233,7 @@ button{color:inherit;cursor:pointer}
   .hero{min-height:850px;padding:128px 24px 220px}.hero__image{object-position:62% center}.hero__wash{background:linear-gradient(90deg,rgba(3,26,43,.94),rgba(3,26,43,.54)),linear-gradient(0deg,rgba(3,26,43,.92),transparent 48%)}.hero__content{width:min(590px,85vw)}.hero__note{display:none}.hero-facts{grid-template-columns:repeat(6,1fr);height:auto;bottom:0}.hero-facts article{grid-column:span 2}.hero-facts article:nth-child(4){grid-column:2/span 2}.hero-facts article:nth-child(5){grid-column:4/span 2}.hero-facts article:nth-child(n+4){border-top:1px solid rgba(255,255,255,.16)}
   .section-heading{align-items:start;flex-direction:column;gap:20px}.routes-layout{grid-template-columns:1fr}.route-map{min-height:600px}.route-map svg{min-height:470px}
   .trust-strip{grid-template-columns:repeat(2,1fr)}.trust-strip article:nth-child(odd)::before{display:none}.trust-strip article:nth-child(4)::before{display:block}
-  .forts-grid{grid-template-columns:repeat(2,1fr);grid-template-rows:460px 300px 300px}.fort-card--large{grid-column:1/-1;grid-row:auto}.fort-card--text{grid-column:auto}
+  .forts-grid{grid-template-columns:repeat(2,1fr);grid-template-rows:460px 300px 300px}.fort-card--large{grid-column:1/-1;grid-row:auto}.fort-card--wide{grid-column:1/-1}
   .team{grid-template-columns:1fr}.departure{grid-template-columns:1fr;padding:0}.departure-copy{padding:70px 24px}.departure figure{min-height:480px}.booking{align-items:start;flex-direction:column}.site-footer{grid-template-columns:repeat(3,1fr)}.brand--footer{grid-column:1/-1}
 }
 
@@ -243,7 +242,7 @@ button{color:inherit;cursor:pointer}
   .hero{min-height:850px;padding:112px 14px 230px}.hero__content{width:100%}.hero h1{font-size:clamp(53px,15.5vw,65px);letter-spacing:-.055em}.hero__script{font-size:64px}.hero__lead{font-size:14px}.hero__actions{display:grid;grid-template-columns:1fr}.hero__actions .button{width:100%}.hero-facts{grid-template-columns:repeat(6,1fr);width:calc(100% - 28px)}.hero-facts article{display:grid;grid-column:span 2;justify-items:center;gap:5px;padding:12px 4px;text-align:center}.hero-facts article:nth-child(4){grid-column:2/span 2}.hero-facts article:nth-child(5){grid-column:4/span 2}.hero-facts article+article::before{top:20%;bottom:20%}.fact-icon{width:31px;height:31px}.hero-facts b{font-size:8px}.hero-facts small{font-size:7px}
   .section{padding:65px 14px}.section-heading{margin-bottom:28px}.section-heading h2{font-size:43px}.route-cards{grid-template-columns:1fr}.route-card:last-child{grid-column:auto}.route-card:last-child .route-card__image,.route-card__image{height:210px}.route-card__body{padding:28px 18px 18px}.route-map{min-height:570px;padding:15px}.route-map svg{min-height:430px}.trust-strip{grid-template-columns:1fr;margin-top:26px}.trust-strip article{padding:17px 8px}.trust-strip article+article::before{left:0;right:0;top:0;bottom:auto;width:auto;height:1px;display:block!important}
   .fleet-grid{grid-template-columns:1fr}.vessel-card--wide{grid-column:auto}.vessel-card{min-height:450px}.vessel-card>div{padding:22px}
-  .forts-grid{display:grid;grid-template-columns:1fr;grid-template-rows:none}.fort-card,.fort-card--large{grid-column:auto;grid-row:auto;min-height:360px}.fort-card--text{min-height:280px}
+  .forts-grid{display:grid;grid-template-columns:1fr;grid-template-rows:none}.fort-card,.fort-card--large,.fort-card--wide{grid-column:auto;grid-row:auto;min-height:360px}
   .review>p{font-size:25px}.reviews-track{min-height:360px}.team-copy h2{font-size:44px}.team-list{grid-template-columns:1fr}.team-list article:nth-child(even){padding-left:0;border-left:0}
   .departure-copy{padding:65px 14px}.departure-copy h2{font-size:47px}.departure-copy>div{display:grid;width:100%}.departure-copy .button{width:100%}.departure figure{min-height:380px}.booking{padding:65px 14px}.booking h2{font-size:54px}.booking .button{width:100%;text-align:center}.site-footer{grid-template-columns:1fr;padding:45px 14px 30px}.brand--footer{grid-column:auto}.site-footer>p{grid-column:auto}
 }
