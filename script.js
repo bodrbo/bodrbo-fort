@@ -4,6 +4,7 @@
   const mobileMenu = document.querySelector('#mobile-menu');
   const reviews = [...document.querySelectorAll('.review')];
   const reviewCount = document.querySelector('[data-review-count]');
+  const reviewControls = document.querySelector('.review-controls');
   let activeReview = 0;
 
   const updateHeader = () => header?.classList.toggle('is-scrolled', window.scrollY > 80);
@@ -34,5 +35,6 @@
   });
   document.querySelector('[data-review-prev]')?.addEventListener('click', () => showReview(activeReview - 1));
   document.querySelector('[data-review-next]')?.addEventListener('click', () => showReview(activeReview + 1));
+  reviewControls?.classList.toggle('is-hidden', reviews.length < 2);
   showReview(0);
 })();

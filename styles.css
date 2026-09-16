@@ -19,6 +19,7 @@
 
 *{box-sizing:border-box}
 html{scroll-behavior:smooth;background:var(--paper);color:var(--ink);font-family:"Manrope",Arial,sans-serif;-webkit-font-smoothing:antialiased}
+section[id]{scroll-margin-top:72px}
 body{margin:0;min-width:320px;overflow-x:hidden}
 body.menu-open{overflow:hidden}
 img{display:block;max-width:100%}
@@ -165,14 +166,20 @@ button{color:inherit;cursor:pointer}
 .fort-card--wide a{display:inline-block;margin-top:16px;border-bottom:1px solid rgba(255,255,255,.55);color:#fff;font-size:9px;font-weight:800;line-height:1.8;text-decoration:none;text-transform:uppercase}
 
 .reviews{background:#0a3552;color:#fff}
-.reviews-track{position:relative;min-height:250px}
-.review{display:none;margin:0;padding:0}
-.review.is-active{display:block;animation:review-in .35s ease-out}
+.reviews-track{position:relative}
+.review{display:none;grid-template-columns:minmax(300px,.82fr) minmax(0,1.18fr);gap:clamp(35px,6vw,90px);align-items:center;margin:0;padding:0}
+.review.is-active{display:grid;animation:review-in .35s ease-out}
 @keyframes review-in{from{opacity:0;transform:translateX(22px)}to{opacity:1;transform:none}}
-.review>p{max-width:1140px;margin:0;font-size:clamp(25px,3.2vw,48px);font-weight:500;line-height:1.3;letter-spacing:-.025em}
-.review footer{display:grid;gap:3px;margin-top:28px}
+.review__photo{position:relative;overflow:hidden;margin:0;border-radius:var(--radius);background:#0f2f44;box-shadow:0 24px 60px rgba(0,0,0,.23)}
+.review__photo img{display:block;width:100%;aspect-ratio:1;object-fit:cover;object-position:var(--review-focus,center)}
+.review__photo figcaption{position:absolute;left:18px;bottom:18px;border:1px solid rgba(255,255,255,.38);border-radius:999px;background:rgba(3,26,43,.7);padding:8px 12px;color:#fff;font-size:8px;font-weight:800;letter-spacing:.04em;text-transform:uppercase;backdrop-filter:blur(8px)}
+.review__quote{position:relative;margin:0;padding:20px 0}
+.review__mark{display:block;height:62px;color:var(--orange);font:700 96px/1 "Oswald",sans-serif}
+.review__quote>p{max-width:780px;margin:0;font-size:clamp(28px,3.2vw,48px);font-weight:500;line-height:1.28;letter-spacing:-.025em}
+.review footer{display:grid;gap:4px;margin-top:32px;padding-top:22px;border-top:1px solid rgba(255,255,255,.2)}
 .review footer b{font-size:12px}.review footer span{color:#8fb0c5;font-size:10px}
-.review-controls{display:flex;align-items:center;gap:16px;margin-top:35px}
+.review-controls{display:flex;align-items:center;gap:16px;margin:35px 0 0 calc(36% + clamp(35px,6vw,90px))}
+.review-controls.is-hidden{display:none}
 .review-controls button{display:grid;place-items:center;width:43px;height:43px;border:1px solid rgba(255,255,255,.3);border-radius:50%;background:transparent;color:#fff}
 .review-controls span{color:#a6c0d0;font-size:10px}
 
@@ -243,7 +250,7 @@ button{color:inherit;cursor:pointer}
   .section{padding:65px 14px}.section-heading{margin-bottom:28px}.section-heading h2{font-size:43px}.route-cards{grid-template-columns:1fr}.route-card:last-child{grid-column:auto}.route-card:last-child .route-card__image,.route-card__image{height:210px}.route-card__body{padding:28px 18px 18px}.route-map{min-height:570px;padding:15px}.route-map svg{min-height:430px}.trust-strip{grid-template-columns:1fr;margin-top:26px}.trust-strip article{padding:17px 8px}.trust-strip article+article::before{left:0;right:0;top:0;bottom:auto;width:auto;height:1px;display:block!important}
   .fleet-grid{grid-template-columns:1fr}.vessel-card--wide{grid-column:auto}.vessel-card{min-height:450px}.vessel-card>div{padding:22px}
   .forts-grid{display:grid;grid-template-columns:1fr;grid-template-rows:none}.fort-card,.fort-card--large,.fort-card--wide{grid-column:auto;grid-row:auto;min-height:360px}
-  .review>p{font-size:25px}.reviews-track{min-height:360px}.team-copy h2{font-size:44px}.team-list{grid-template-columns:1fr}.team-list article:nth-child(even){padding-left:0;border-left:0}
+  .review.is-active{grid-template-columns:1fr}.review__photo{width:min(100%,460px);margin:auto}.review__quote{padding-top:5px}.review__quote>p{font-size:25px}.review-controls{margin-left:0}.team-copy h2{font-size:44px}.team-list{grid-template-columns:1fr}.team-list article:nth-child(even){padding-left:0;border-left:0}
   .departure-copy{padding:65px 14px}.departure-copy h2{font-size:47px}.departure-copy>div{display:grid;width:100%}.departure-copy .button{width:100%}.departure figure{min-height:380px}.booking{padding:65px 14px}.booking h2{font-size:54px}.booking .button{width:100%;text-align:center}.site-footer{grid-template-columns:1fr;padding:45px 14px 30px}.brand--footer{grid-column:auto}.site-footer>p{grid-column:auto}
 }
 
