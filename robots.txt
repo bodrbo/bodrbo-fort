@@ -1,0 +1,5 @@
+User-agent: *
+Allow: /
+
+Host: bodrbo-fort.ru
+Sitemap: https://bodrbo-fort.ru/sitemap.xml
