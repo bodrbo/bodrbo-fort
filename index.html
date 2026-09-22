@@ -21,6 +21,7 @@
   <link href="https://fonts.googleapis.com/css2?family=Caveat:wght@600&amp;family=Manrope:wght@400;500;600;700;800&amp;family=Oswald:wght@500;600;700&amp;display=swap" rel="stylesheet">
   <link rel="icon" href="assets/logo-face.png" type="image/png">
   <link rel="stylesheet" href="styles.css?v=1">
+  <link rel="stylesheet" href="booking.css?v=1">
   <script type="application/ld+json">
   {
     "@context": "https://schema.org",
@@ -64,7 +65,7 @@
       <a href="tel:+79633246627">+7 (963) 324-66-27</a>
       <small>Ежедневно с 10:00 до 20:00</small>
     </div>
-    <a class="button button--compact" href="https://n1058248.yclients.com" target="_blank" rel="noopener">Забронировать <span>→</span></a>
+    <button class="button button--compact" type="button" data-book-open>Забронировать <span>→</span></button>
     <button class="menu-toggle" type="button" aria-expanded="false" aria-controls="mobile-menu" aria-label="Открыть меню"><span></span><span></span></button>
   </header>
 
@@ -73,7 +74,7 @@
       <a href="#excursions">Экскурсии</a><a href="#fleet">Аренда катера</a><a href="#forts">О фортах</a><a href="#team">О нас</a><a href="#reviews">Отзывы</a><a href="#contacts">Контакты</a>
     </nav>
     <a class="mobile-menu__phone" href="tel:+79633246627">+7 (963) 324-66-27</a>
-    <a class="button" href="https://n1058248.yclients.com" target="_blank" rel="noopener">Забронировать экскурсию</a>
+    <button class="button" type="button" data-book-open>Забронировать экскурсию</button>
   </div>
 
   <main id="main">
@@ -87,7 +88,7 @@
         <p class="hero__lead">Увидьте легендарные форты и маяки Финского залива с воды и высадитесь на островные крепости.</p>
         <div class="hero__actions">
           <a class="button" href="#excursions">Выбрать экскурсию <span>→</span></a>
-          <a class="button button--ghost" href="https://n1058248.yclients.com" target="_blank" rel="noopener">Билеты от 1 900 ₽</a>
+          <button class="button button--ghost" type="button" data-book-open>Билеты от 1 900 ₽</button>
         </div>
       </div>
       <p class="hero__note">История<br>начинается<br>с воды <span>↙</span></p>
@@ -132,7 +133,7 @@
               <p class="route-card__subtitle">Форты Кронштадта с воды</p>
               <p>Экспресс-знакомство с главными достопримечательностями морской крепости.</p>
               <ul><li>9 объектов с воды</li></ul>
-              <footer><b>1 900 ₽ <small>/ чел.</small></b><a class="card-button" href="https://n1058248.yclients.com" target="_blank" rel="noopener">Выбрать</a></footer>
+              <footer><b>1 900 ₽ <small>/ чел.</small></b><button class="card-button" type="button" data-book-open data-book-service="Малый тур">Выбрать</button></footer>
             </div>
           </article>
 
@@ -145,7 +146,7 @@
               <p class="route-card__subtitle">Маршрут с высадкой</p>
               <p>Золотая середина для первого путешествия по фортам Кронштадта.</p>
               <ul><li>9 объектов с воды</li><li>Высадка на форт Павел I</li></ul>
-              <footer><b>2 200 ₽ <small>/ чел.</small></b><a class="card-button card-button--orange" href="https://n1058248.yclients.com" target="_blank" rel="noopener">Выбрать</a></footer>
+              <footer><b>2 200 ₽ <small>/ чел.</small></b><button class="card-button card-button--orange" type="button" data-book-open data-book-service="Средний тур">Выбрать</button></footer>
             </div>
           </article>
 
@@ -158,7 +159,7 @@
               <p class="route-card__subtitle">Полное погружение в историю</p>
               <p>Самый насыщенный маршрут для тех, кто хочет увидеть максимум.</p>
               <ul><li>9 объектов с воды</li><li>Высадка на Павел I и Граф Милютин</li></ul>
-              <footer><b>3 700 ₽ <small>/ чел.</small></b><a class="card-button" href="https://n1058248.yclients.com" target="_blank" rel="noopener">Выбрать</a></footer>
+              <footer><b>3 700 ₽ <small>/ чел.</small></b><button class="card-button" type="button" data-book-open data-book-service="Большой тур">Выбрать</button></footer>
             </div>
           </article>
         </div>
@@ -238,8 +239,12 @@
           <figure class="review__photo" style="--review-focus:44% center"><img src="assets/images/review-expedition-safura.webp" alt="Сафура с друзьями на экскурсионном катере" loading="lazy"><figcaption>Живые впечатления гостей</figcaption></figure>
           <blockquote class="review__quote"><span class="review__mark" aria-hidden="true">“</span><p>Экскурсия супер! Артем очень эрудированный и талантливый экскурсовод с прекрасным чувством юмора. С любовью расскажет о родном Кронштадте. Однозначно советуем экскурсию!</p><footer><b>Сафура</b><span>Маршрут «Экспедиция»</span></footer></blockquote>
         </article>
+        <article class="review">
+          <figure class="review__photo" style="--review-focus:center 62%"><img src="assets/images/review-expedition-anastasia.webp" alt="Анастасия у якоря на форте Граф Милютин" loading="lazy"><figcaption>Живые впечатления гостей</figcaption></figure>
+          <blockquote class="review__quote"><span class="review__mark" aria-hidden="true">“</span><p>Спасибо огромное Арсению и нашему капитану Андрею! несмотря на непогоду, мы прекрасно провели время в компании ответственного капитана и прекрасного гида. рекоменду экскурсию тем, кто готов к перепетиям погоды и хочет увидеть ту часть Кронштадта, которая и есть, я думаю, его сердце!</p><footer><b>Анастасия</b><span>Маршрут «Экспедиция»</span></footer></blockquote>
+        </article>
       </div>
-      <div class="review-controls"><button type="button" data-review-prev aria-label="Предыдущий отзыв">←</button><span data-review-count>1 / 2</span><button type="button" data-review-next aria-label="Следующий отзыв">→</button></div>
+      <div class="review-controls"><button type="button" data-review-prev aria-label="Предыдущий отзыв">←</button><span data-review-count>1 / 3</span><button type="button" data-review-next aria-label="Следующий отзыв">→</button></div>
     </section>
 
     <section class="section team" id="team">
@@ -260,18 +265,73 @@
     </section>
 
     <section class="booking">
-      <p class="eyebrow">Море ближе, чем кажется</p><h2>Выберите маршрут.<br>Остальное — на нас.</h2><div><a class="button" href="https://n1058248.yclients.com" target="_blank" rel="noopener">Забронировать экскурсию <span>→</span></a><p>Нужна помощь с выбором?<br><a href="tel:+79633246627">+7 (963) 324-66-27</a></p></div>
+      <p class="eyebrow">Море ближе, чем кажется</p><h2>Выберите маршрут.<br>Остальное — на нас.</h2><div><button class="button" type="button" data-book-open>Забронировать экскурсию <span>→</span></button><p>Нужна помощь с выбором?<br><a href="tel:+79633246627">+7 (963) 324-66-27</a></p></div>
     </section>
   </main>
+
+  <div class="booking-modal" data-booking-modal aria-hidden="true">
+    <button class="booking-modal__backdrop" type="button" data-book-close aria-label="Закрыть окно записи"></button>
+    <section class="booking-dialog" role="dialog" aria-modal="true" aria-labelledby="booking-title" tabindex="-1">
+      <header class="booking-dialog__header">
+        <div><p class="eyebrow">Онлайн-запись</p><h2 id="booking-title">Выберите свой выход в море</h2></div>
+        <button class="booking-dialog__close" type="button" data-book-close aria-label="Закрыть">×</button>
+      </header>
+
+      <div class="booking-dialog__body">
+        <aside class="booking-rail" aria-label="Этапы записи">
+          <ol>
+            <li class="is-active" data-book-progress="schedule"><span>01</span><div><b>Рейс</b><small>дата и время</small></div></li>
+            <li data-book-progress="details"><span>02</span><div><b>Гости</b><small>контактные данные</small></div></li>
+            <li data-book-progress="success"><span>03</span><div><b>На борт</b><small>подтверждение</small></div></li>
+          </ol>
+          <div class="booking-rail__help"><span>Нужна помощь?</span><a href="tel:+79633246627">+7 (963) 324-66-27</a><small>Ежедневно, 10:00–20:00</small></div>
+        </aside>
+
+        <div class="booking-stage">
+          <section class="booking-step" data-book-step="schedule">
+            <div class="booking-step__heading"><div><span>Шаг 1 из 2</span><h3>Когда отправимся?</h3></div><p>Показываем только рейсы, на которых ещё есть места.</p></div>
+            <div class="booking-route-filter" data-book-routes aria-label="Выбор маршрута"></div>
+            <div class="booking-days" data-book-days aria-label="Выбор даты"></div>
+            <div class="booking-status" data-book-status role="status"><span class="booking-loader"></span><p>Сверяемся с расписанием…</p></div>
+            <div class="booking-slots" data-book-slots></div>
+          </section>
+
+          <form class="booking-step" data-book-step="details" data-book-form hidden novalidate>
+            <div class="booking-step__heading"><div><span>Шаг 2 из 2</span><h3>Кто будет на борту?</h3></div><button type="button" class="booking-back" data-book-back>← Другой рейс</button></div>
+            <div class="booking-selection" data-book-selection></div>
+            <div class="booking-fields">
+              <label><span>Ваше имя</span><input name="name" type="text" autocomplete="name" maxlength="180" placeholder="Например, Анастасия" required></label>
+              <label><span>Телефон</span><input name="phone" type="tel" autocomplete="tel" maxlength="40" inputmode="tel" placeholder="+7 921 000-00-00" required></label>
+              <fieldset class="booking-guests"><legend>Количество гостей</legend><button type="button" data-guests-minus aria-label="Уменьшить количество гостей">−</button><output data-guests-count>1</output><button type="button" data-guests-plus aria-label="Увеличить количество гостей">+</button><small data-guests-hint></small></fieldset>
+              <label class="booking-honeypot" aria-hidden="true"><span>Компания</span><input name="company" type="text" tabindex="-1" autocomplete="off"></label>
+            </div>
+            <div class="booking-form-error" data-book-form-error role="alert"></div>
+            <div class="booking-submit-row"><div><b data-book-total></b><small>Оплата — после подтверждения записи</small></div><button class="button" type="submit" data-book-submit>Забронировать <span>→</span></button></div>
+            <p class="booking-consent">Нажимая «Забронировать», вы соглашаетесь с <a href="privacy.html" target="_blank" rel="noopener">политикой обработки персональных данных</a>.</p>
+          </form>
+
+          <section class="booking-step booking-success" data-book-step="success" hidden>
+            <div class="booking-success__icon" aria-hidden="true">✓</div>
+            <p class="eyebrow eyebrow--blue">Запись создана</p>
+            <h3>До встречи<br>на борту!</h3>
+            <p data-book-success-copy></p>
+            <div class="booking-success__summary" data-book-success-summary></div>
+            <div class="booking-success__actions"><button class="button" type="button" data-book-close>Готово</button><a href="tel:+79633246627">Задать вопрос →</a></div>
+          </section>
+        </div>
+      </div>
+    </section>
+  </div>
 
   <footer class="site-footer">
     <a class="brand brand--footer" href="#top"><img src="assets/logo-face.png" alt=""><span><strong>Бодрый<br>Боцман</strong><small>Морские приключения</small></span></a>
     <div><small>Связаться</small><a href="tel:+79633246627">+7 (963) 324-66-27</a><a href="mailto:info@bodrbo.ru">info@bodrbo.ru</a></div>
     <div><small>Мессенджеры</small><a href="https://t.me/bodrbo_fort" target="_blank" rel="noopener">Telegram ↗</a><a href="https://wa.me/79633246627" target="_blank" rel="noopener">WhatsApp ↗</a></div>
-    <div><small>Документы</small><span>ООО «Бодрый Боцман»</span><span>ИНН 7843019417</span><span>ОГРН 1217800157101</span></div>
+    <div><small>Документы</small><span>ООО «Бодрый Боцман»</span><span>ИНН 7843019417</span><span>ОГРН 1217800157101</span><a href="privacy.html">Политика обработки данных</a></div>
     <p>© Бодрый Боцман, 2026</p>
   </footer>
 
   <script src="script.js?v=1"></script>
+  <script src="booking.js?v=1"></script>
 </body>
 </html>

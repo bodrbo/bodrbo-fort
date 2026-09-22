@@ -1,0 +1,15 @@
+.legal-page{background:#f6f8fa;color:var(--ink)}
+.legal-header{position:relative;z-index:2;display:flex;align-items:center;justify-content:space-between;gap:30px;min-height:92px;padding:16px max(40px,calc((100vw - 1180px)/2));background:var(--ink-deep)}
+.legal-main{overflow:hidden}
+.privacy-hero{position:relative;padding:90px max(40px,calc((100vw - 1180px)/2)) 72px;background:radial-gradient(circle at 85% 25%,#0b527d 0,transparent 33%),var(--ink);color:#fff}
+.privacy-hero::after{content:"";position:absolute;right:8%;bottom:-120px;width:300px;height:300px;border:1px solid rgba(90,164,207,.16);border-radius:50%;box-shadow:0 0 0 45px rgba(90,164,207,.05),0 0 0 92px rgba(90,164,207,.025)}
+.privacy-hero h1{position:relative;z-index:1;max-width:930px;margin:0;font:600 clamp(48px,7vw,92px)/.95 "Oswald",Impact,sans-serif;letter-spacing:-.035em;text-transform:uppercase}
+.privacy-hero h1 em{color:var(--orange);font-style:normal}.privacy-hero>p:last-child{position:relative;z-index:1;max-width:620px;margin:28px 0 0;color:#bfd0dc;font-size:14px;line-height:1.7}
+.privacy-content{width:min(920px,calc(100% - 48px));margin:0 auto;padding:70px 0 100px}
+.privacy-content section+section{margin-top:52px;padding-top:45px;border-top:1px solid var(--line)}
+.privacy-content h2{margin:0 0 22px;font:600 clamp(25px,3vw,36px)/1.12 "Oswald",Impact,sans-serif;text-transform:uppercase}
+.privacy-content h3{margin:26px 0 12px;font-size:16px}.privacy-content h4{margin:20px 0 8px;font-size:13px}
+.privacy-content p,.privacy-content li{color:#455e70;font-size:13px;line-height:1.78}.privacy-content ul{padding-left:22px}.privacy-content a{color:#0b69a5;font-weight:700}
+.privacy-content table{display:block;overflow-x:auto;width:100%;border-collapse:collapse;background:#fff}.privacy-content th,.privacy-content td{min-width:180px;border:1px solid var(--line);padding:13px;text-align:left;vertical-align:top;font-size:11px;line-height:1.5}.privacy-content th{background:#eaf2f7}
+.legal-footer{display:flex;align-items:center;justify-content:center;gap:28px;flex-wrap:wrap;padding:32px 24px;background:var(--ink-deep);color:#8fa7b7;font-size:10px}.legal-footer a{color:#fff;text-decoration:none}
+@media(max-width:640px){.legal-header{min-height:72px;padding:10px 14px}.legal-header .button{min-height:42px;padding:10px 13px;font-size:8px}.legal-header .brand small{display:none}.privacy-hero{padding:65px 14px 55px}.privacy-hero h1{font-size:45px}.privacy-content{width:calc(100% - 28px);padding:50px 0 70px}.privacy-content section+section{margin-top:36px;padding-top:32px}.privacy-content p,.privacy-content li{font-size:12px}.legal-footer{align-items:flex-start;flex-direction:column;gap:10px;padding:28px 14px}}
