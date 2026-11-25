@@ -13,7 +13,7 @@ cp "$project_root/index.html" "$project_root/privacy.html" "$project_root/404.ht
   "$project_root/script.js" "$project_root/booking.js" "$project_root/booking-api.php" \
   "$project_root/booking-config.example.php" "$project_root/robots.txt" \
   "$project_root/sitemap.xml" "$project_root/.htaccess" "$build_dir/"
-cp "$project_root/assets/logo-face.png" "$build_dir/assets/"
+cp -R "$project_root/assets/brand" "$build_dir/assets/"
 cp -R "$project_root/assets/images" "$build_dir/assets/"
 
 (cd "$build_dir" && zip -q -r "$archive_path" .)
